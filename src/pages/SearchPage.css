@@ -1,0 +1,21 @@
+.search-page {
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.search-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* две колонки одинаковой ширины */
+  gap: 100px 50px; /* расстояние между карточками */
+  padding: 100px;
+}
+
+

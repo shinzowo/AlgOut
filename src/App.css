@@ -1,0 +1,14 @@
+/* App.css */
+.app {
+  background-color: #F2EFEF; /*  любой цвет */
+  min-height: 100vh;         /* чтобы фон занимал всю высоту экрана */
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* три колонки одинаковой ширины */
+  gap: 50px 50px; /* расстояние между карточками */
+  padding: 80px;
+ 
+}
+
