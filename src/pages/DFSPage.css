@@ -1,0 +1,58 @@
+.dfs-page { padding:20px 28px; background:#f4f4f8; min-height:100vh; }
+.dfs-description { max-width:900px; background:#fff; padding:18px 22px; border-radius:12px; margin:0 auto 14px; box-shadow:0 2px 8px rgba(0,0,0,.08); border-left:5px solid #a855f7; }
+.dfs-description h2 { margin-top:0; color:#1e1e2e; }
+.dfs-description p  { color:#444; line-height:1.6; margin-bottom:8px; }
+.dfs-complexity { font-size:13px; color:#666; margin-top:6px; }
+.dfs-legend { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+.dfs-chip { padding:4px 12px; border-radius:20px; font-size:12px; font-weight:700; color:#fff; }
+.dfs-toolbar { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; align-items:center; margin-bottom:8px; max-width:960px; margin-left:auto; margin-right:auto; }
+.dfs-tool { padding:7px 14px; border:2px solid #c7c7d0; border-radius:8px; background:#fff; font-size:13px; font-weight:600; cursor:pointer; transition:all .15s; }
+.dfs-tool--active { background:#1e1e2e; color:#fff; border-color:#1e1e2e; }
+.dfs-tool:disabled { opacity:.5; cursor:not-allowed; }
+.dfs-divider { width:1px; height:30px; background:#e0e0e8; margin:0 4px; }
+.dfs-speed-label { display:flex; align-items:center; gap:6px; font-size:13px; color:#555; }
+.dfs-btn { padding:7px 16px; border:none; border-radius:8px; font-weight:700; font-size:13px; cursor:pointer; transition:background .2s; }
+.dfs-btn:disabled { opacity:.5; cursor:not-allowed; }
+.dfs-btn--primary   { background:#a855f7; color:#fff; }
+.dfs-btn--primary:hover:not(:disabled)   { background:#9333ea; }
+.dfs-btn--secondary { background:#e2e2ee; color:#333; }
+.dfs-btn--secondary:hover:not(:disabled) { background:#cccce0; }
+.dfs-btn--danger    { background:#fee2e2; color:#b91c1c; }
+.dfs-btn--danger:hover:not(:disabled)    { background:#fecaca; }
+.dfs-hint { text-align:center; font-size:13px; color:#a855f7; font-weight:600; margin-bottom:10px; min-height:20px; }
+.dfs-main { display:flex; gap:16px; max-width:1060px; margin:0 auto; align-items:flex-start; }
+.dfs-svg { flex:1 1 600px; height:480px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.08); border:2px solid #e2e2ee; }
+.dfs-node { transition:fill .3s ease; filter:drop-shadow(0 2px 4px rgba(0,0,0,.18)); }
+.dfs-edge { stroke:#c7c7d8; stroke-width:2.5; transition:stroke .3s,stroke-width .3s; }
+.dfs-edge--visited { stroke:#86efac; stroke-width:3; }
+.dfs-edge--active  { stroke:#e879f9; stroke-width:4; }
+.dfs-log-panel { flex:0 0 240px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.08); padding:16px; }
+.dfs-panel-title { font-weight:700; font-size:14px; color:#1e1e2e; margin-bottom:8px; }
+.dfs-stack-box { font-size:13px; color:#555; background:#f8f1ff; border-radius:8px; padding:8px 10px; margin-bottom:10px; min-height:34px; word-break:break-word; }
+.dfs-log-list { list-style:none; padding:0; margin:0; font-size:12px; color:#555; max-height:260px; overflow-y:auto; }
+.dfs-log-list li { padding:4px 0; border-bottom:1px solid #f0f0f8; }
+.dfs-log-active { color:#a855f7; font-weight:700; }
+.dfs-done { margin-top:12px; padding:10px; background:#e6f7ec; border-radius:8px; color:#15803d; font-size:13px; line-height:1.6; }
+.dfs-info { margin-top:10px; font-size:12px; color:#aaa; }
+.dfs-nav { margin-top:20px; display:flex; justify-content:center; }
+
+/* ── Toolbar (interactive) ── */
+.dfs-toolbar {
+  display: flex; gap: 8px; justify-content: center;
+  flex-wrap: wrap; align-items: center; margin-bottom: 8px;
+}
+.dfs-tool {
+  padding: 7px 14px; border: 2px solid #c7c7d0;
+  border-radius: 8px; background: #fff; font-size: 13px;
+  font-weight: 600; cursor: pointer; transition: all .15s;
+}
+.dfs-tool--active { background: #a855f7; color: #fff; border-color: #a855f7; }
+.dfs-tool:disabled { opacity: .5; cursor: not-allowed; }
+.dfs-divider { width: 1px; height: 30px; background: #e0e0e8; margin: 0 2px; }
+.dfs-label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #444; }
+.dfs-label select { padding: 6px 8px; border: 1.5px solid #c7c7d0; border-radius: 8px; font-size: 13px; outline: none; }
+.dfs-speed-label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #555; }
+.dfs-btn--danger { background: #fee2e2; color: #b91c1c; border: none; }
+.dfs-btn--danger:hover:not(:disabled) { background: #fecaca; }
+.dfs-hint { text-align: center; font-size: 12px; color: #888; margin-bottom: 10px; min-height: 18px; }
+.dfs-graph-wrap { flex: 1 1 540px; }

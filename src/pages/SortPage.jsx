@@ -3,11 +3,11 @@ import Card from "../components/Card";
 import "./SortPage.css";
 
 const sortAlgorithms = [
-  { title: "Bubble Sort",  link: "/bubble" },
-  { title: "Selection Sort", link: "/selection" },
-  { title: "Insertion Sort", link: "/insertion" },
-  { title: "Merge Sort",  link: "/merge" },
-  { title: "Quick Sort", link: "/quick" },
+  { title: "Сортировка пузырьком",  link: "/bubble" },
+  { title: "Сортировка выбором", link: "/selection" },
+  { title: "Сортировка вставками", link: "/insertion" },
+  { title: "Сортировка слиянием",  link: "/merge" },
+  { title: "Быстрая сортировка", link: "/quick" },
 ];
 
 const SortPage = () => {

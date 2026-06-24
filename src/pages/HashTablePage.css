@@ -1,0 +1,171 @@
+.ht-page {
+  padding: 24px 32px;
+  background: #f4f4f8;
+  min-height: 100vh;
+}
+
+/* Description */
+.ht-desc {
+  max-width: 900px;
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin: 0 auto 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  border-left: 5px solid #8b5cf6;
+}
+.ht-desc h2 { margin-top:0; color:#1e1e2e; }
+.ht-desc p  { color:#444; line-height:1.6; margin-bottom:10px; }
+.ht-complexity { font-size:13px; color:#666; margin-top:8px; }
+
+.ht-legend { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+.ht-chip {
+  padding:4px 14px; border-radius:20px;
+  font-size:12px; font-weight:700; color:#fff;
+}
+.ht-chip--active { background:#8b5cf6; }
+.ht-chip--probe  { background:#f59e0b; }
+.ht-chip--empty  { background:#94a3b8; }
+
+/* Method tabs */
+.ht-method-tabs {
+  display:flex; justify-content:center; gap:8px; margin-bottom:16px;
+}
+.ht-tab {
+  padding:8px 20px; border:2px solid #c7c7d0;
+  border-radius:8px; background:#fff; font-size:14px;
+  font-weight:600; cursor:pointer; transition:all .2s;
+}
+.ht-tab--active {
+  background:#8b5cf6; color:#fff; border-color:#8b5cf6;
+}
+
+/* Controls */
+.ht-controls {
+  display:flex; gap:12px; justify-content:center;
+  flex-wrap:wrap; margin-bottom:12px;
+}
+.ht-input-group { display:flex; gap:6px; }
+.ht-input {
+  padding:8px 12px; border:1.5px solid #c7c7d0;
+  border-radius:8px; font-size:14px; width:220px; outline:none;
+}
+.ht-input:focus { border-color:#8b5cf6; }
+
+.ht-btn {
+  padding:8px 18px; border:none; border-radius:8px;
+  font-weight:700; font-size:14px; cursor:pointer; transition:background .2s;
+}
+.ht-btn:disabled { opacity:.5; cursor:not-allowed; }
+.ht-btn--primary  { background:#8b5cf6; color:#fff; }
+.ht-btn--primary:hover { background:#7c3aed; }
+.ht-btn--search   { background:#0ea5e9; color:#fff; }
+.ht-btn--search:hover { background:#0284c7; }
+.ht-btn--secondary { background:#e2e2ee; color:#333; }
+.ht-btn--secondary:hover { background:#cccce0; }
+
+/* Stats */
+.ht-stats {
+  display:flex; gap:24px; justify-content:center;
+  flex-wrap:wrap; margin-bottom:16px;
+  font-size:14px; color:#555;
+}
+
+/* Main layout */
+.ht-main {
+  display:flex; gap:20px; max-width:1000px;
+  margin:0 auto; align-items:flex-start;
+}
+
+/* Table visual */
+.ht-table-visual {
+  flex:1 1 500px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  overflow:hidden;
+}
+
+.ht-row {
+  display:flex; align-items:center;
+  border-bottom:1px solid #f0f0f8;
+  padding:10px 14px; gap:12px;
+  transition:background .25s;
+  min-height:52px;
+}
+.ht-row:last-child { border-bottom:none; }
+.ht-row--active  { background:#f5f0ff; }
+.ht-row--probe   { background:#fffbeb; }
+
+.ht-index {
+  width:28px; height:28px; border-radius:50%;
+  background:#4d54db; color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:13px; flex-shrink:0;
+}
+.ht-hash-icon {
+  width:36px; font-size:11px; color:#999;
+  flex-shrink:0; text-align:center;
+}
+.ht-bucket {
+  flex:1; display:flex; flex-wrap:wrap; gap:6px; align-items:center;
+}
+.ht-empty { color:#ccc; font-size:18px; }
+
+.ht-key-chip {
+  background:#e0e7ff; color:#3730a3;
+  padding:3px 10px; border-radius:20px;
+  font-size:13px; font-weight:600;
+  border:1.5px solid #c7d2fe;
+  animation: popIn .25s ease;
+}
+
+.ht-row--active .ht-key-chip {
+  background:#8b5cf6; color:#fff; border-color:#7c3aed;
+}
+
+.ht-chain-icon { font-size:12px; color:#8b5cf6; font-weight:700; }
+
+@keyframes popIn {
+  from { transform:scale(.6); opacity:0; }
+  to   { transform:scale(1);  opacity:1; }
+}
+
+/* Log panel */
+.ht-log-panel {
+  flex:0 0 260px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  padding:16px;
+}
+.ht-panel-title {
+  font-weight:700; font-size:14px; color:#1e1e2e; margin-bottom:8px;
+}
+.ht-found {
+  padding:8px 12px; border-radius:8px;
+  font-weight:700; font-size:14px; margin-bottom:10px;
+}
+.ht-found--ok  { background:#e6f7ec; color:#15803d; }
+.ht-found--err { background:#fef2f2; color:#b91c1c; }
+
+.ht-log {
+  list-style:none; padding:0; margin:0;
+  font-size:12px; color:#555;
+  max-height:220px; overflow-y:auto;
+}
+.ht-log li { padding:4px 0; border-bottom:1px solid #f0f0f8; }
+.ht-log--active { color:#8b5cf6; font-weight:700; }
+
+.ht-hash-formula {
+  background:#f8f4ff; border-radius:8px;
+  padding:10px 12px; font-size:12px;
+  font-family:'Courier New', monospace; color:#5b21b6;
+  margin-bottom:10px;
+}
+.ht-tip {
+  font-size:12px; color:#888; line-height:1.5;
+}
+
+/* Nav */
+.ht-nav { margin-top:28px; display:flex; justify-content:center; }
